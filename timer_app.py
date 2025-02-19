@@ -22,7 +22,7 @@ def playsound(filepath):
     sound = pygame.mixer.Sound(filepath)
     sound.play()
     pygame.time.delay(int(sound.get_length() * 1000))  # Delay for the length of the sound in milliseconds
-
+s
 def speak(text):
     tts = gTTS(text=text, lang='en')
     tts.save('temp.mp3')
@@ -329,7 +329,7 @@ def startmidway():
     print("Got it. Your sequence will begin from the first stretch.")
     # return sequencedict
   elif inp=="M":
-    updatedsequence={}
+    updatedsequence={} 
     for index, (key, value) in enumerate(sequencedict.items(), start=1):
       print(f"{index}. {key}: {value}")
     newstart=int(input("Please select the number corresponding to the stretch where you would like to start: "))
@@ -445,29 +445,6 @@ arabesqueworkouts=[]
 buttworkouts=[]
 innerthighworkouts=[]
 
-#Hip workouts
-hips1=WorkoutVideo("Hips 1", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Hips 1.mp4", "4:03", "hips", 1)
-hips2=WorkoutVideo("Hips 2", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Hips 2.mp4", "5;15", "hips", 1)
-hips3=WorkoutVideo("Hips 3", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Hips 3.mp4", "4:10", "hips", 1)
-
-#butt workouts
-butt1=WorkoutVideo("Butt 1", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Booty 1.mp4", "3:36", "butt", 1)
-butt2=WorkoutVideo("Butt 2", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Booty 2.mp4", "8:08", "butt", 0)
-
-#ab workouts
-abs1=WorkoutVideo("Abs 1", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Abs 1.mp4", "5:15", "abs", 0)
-abs2=WorkoutVideo("Abs 2", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Abs 2.mp4", "5:08", "abs", 0)
-abs3=WorkoutVideo("Abs 3", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Abs 3.mp4", "5:07", "abs", 0)
-abs4=WorkoutVideo("Abs 4", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Abs 4.mp4", "5:08", "abs", 0)
-abs2=WorkoutVideo("Abs 5", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Abs 5.mp4", "5:08", "abs", 0)
-
-#arabesque workouts
-arabesque1=WorkoutVideo("Arabesque 1", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Arabesque 1.mp4", "5:03", "arabesque", 0)
-
-# inner thigh workouts
-innerhtighs1=WorkoutVideo("Inner Thighs 1", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Inner Thighs 1.mp4", "6:37", "inner thighs", 0)
-innerhtighs2=WorkoutVideo("Inner Thighs 2", "/Users/hayleydeberry/Desktop/PROJECT/WORKOUT VIDEOS/Inner Thighs 2.mp4", "4:26", "inner thighs", 0)
-
 
 def hipschoice():
   hipselection=random.choices(hipworkouts)
@@ -510,3 +487,5 @@ def buildworkout(*args):
 
 
 runtimer()
+
+#comment
